@@ -12,8 +12,12 @@ function university_files()
 
 add_action('wp_enqueue_scripts', 'university_files');
 
+
+
+// Creates a function so that the page updates the title in the browser tab. 
 function university_features()
 {
+
     add_theme_support('title-tag');
 }
 

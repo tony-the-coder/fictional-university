@@ -17,6 +17,8 @@
                         <li><a href="#">Events</a></li>
                         <li><a href="#">Campuses</a></li>
                     </ul>
+
+
                 </nav>
             </div>
 
@@ -28,6 +30,9 @@
                         <li><a href="<?php echo site_url('/privacy-policy') ?>">Privacy</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
+
+
+
                 </nav>
             </div>
         </div>
