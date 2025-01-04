@@ -17,6 +17,7 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+logs/php/error.log 
 
 # WordPress generated files and folders
 wp-content/uploads/
