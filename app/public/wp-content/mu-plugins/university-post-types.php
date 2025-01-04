@@ -3,6 +3,8 @@
 function university_post_types()
 {
     register_post_type('event', array(
+        // 'supports' => array('title', 'editor', 'excerpt!', 'custom-fields'), < this is how you manually add custom plugins
+        'supports' => array('title', 'editor', 'excerpt!'),
         'rewrite' => array('slug' => 'events'),
         'has_archive' => true,
         'public' => true,
