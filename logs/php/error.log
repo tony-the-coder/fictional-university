@@ -117,3 +117,9 @@ Stack trace:
 [04-Jan-2025 14:58:42 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 6
 [04-Jan-2025 14:58:59 UTC] PHP Parse error:  syntax error, unexpected identifier "get_footer" in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 10
 [04-Jan-2025 20:59:15 UTC] PHP Parse error:  syntax error, unexpected token "=>" in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\mu-plugins\university-post-types.php on line 6
+[04-Jan-2025 22:55:03 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 32
+[04-Jan-2025 22:55:03 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 32
+[04-Jan-2025 22:56:09 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 32
+[04-Jan-2025 22:56:10 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 32
+[04-Jan-2025 22:56:11 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 32
+[04-Jan-2025 22:56:11 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 32
