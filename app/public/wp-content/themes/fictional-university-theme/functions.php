@@ -20,6 +20,9 @@ function university_features()
 
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    // Set different image sizes
+    add_image_size('professorlandscape', 450, 300, true);
+    add_image_size('professorPortait', 400, 360, true);
 }
 
 add_action('after_setup_theme', 'university_features');
