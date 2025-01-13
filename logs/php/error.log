@@ -141,3 +141,5 @@ Stack trace:
 [13-Jan-2025 13:41:02 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 5
 [13-Jan-2025 13:41:02 UTC] PHP Warning:  Undefined array key "subtitle" in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 9
 [13-Jan-2025 13:41:02 UTC] PHP Warning:  Undefined array key "photo" in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 13
+[13-Jan-2025 14:07:53 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[13-Jan-2025 14:47:25 UTC] PHP Parse error:  syntax error, unexpected identifier "php" in C:\Users\tonyt\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\page-past-events.php on line 37

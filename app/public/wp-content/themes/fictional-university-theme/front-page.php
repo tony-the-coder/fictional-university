@@ -36,28 +36,14 @@
                 )
             );
             while ($homepageEvents->have_posts()) {
-                $homepageEvents->the_post(); ?>
-                <div class="event-summary">
-                    <a class="event-summary__date t-center" href="#">
-                        <span class="event-summary__month"><?php
-                                                            $eventDate = new DateTime(get_field('event_date'));
-                                                            echo $eventDate->format('M');
-                                                            ?></span>
-                        <span class="event-summary__day"><?php echo $eventDate->format('d');
-                                                            ?></span>
-                    </a>
-                    <div class="event-summary__content">
-                        <h5 class="event-summary__title headline headline--tiny"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                        <p><?php echo wp_trim_words(get_the_content(), 18) ?> <a href="
-                        <?php the_permalink(); ?>" class="nu gray">Learn more</a></p>
-                    </div>
-                </div>
-
-
-
-            <?php
-
-
+                $homepageEvents->the_post();
+                //Either I totally did not know about this get_template_part or I have fogotten it; who knows, at least I know it now. 
+                // The get_template_part function is a default WordPress function for including template parts.
+                //  get_template_part('template-parts/content, 'event');
+                // Can be used to include reusable template parts like headers, footers, or specific content sections
+                // This will include the template part 'content-event.php' from the 'template-parts' directory.
+                // The second argument 'event' specifies the slug of the template part.
+                get_template_part('template-parts/content', 'event');
             }
 
             ?>
