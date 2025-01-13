@@ -1,5 +1,41 @@
 <?php
+function pageBanner($args = NULL)
+{
+    //  Fallback in case the data for the function does not exist. Latest version of PHP require the isset if you start looking for an item in an array that does not exist; the !archive and !ishome() fixes issues on pages that have a background image. . Glad I am refreshing. 
+    if (!isset($args['title'])) {
+        $args['title'] = get_the_title();
+    }
 
+    if (!isset($args['subtitle'])) {
+        $args['subtitle'] = get_field('page_banner_subtitle');
+    }
+
+    if (!isset($args['photo'])) {
+        // The and statements are right below this.
+        if (get_field('page_banner_background_image') and !is_archive() and !is_home()) {
+            $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
+        } else {
+            $args['photo'] = get_theme_file_uri('/images/ocean.jpg');
+        }
+    }
+
+?>
+    <div class="page-banner">
+        <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo']; ?>);">
+        </div>
+        <div class="page-banner__content container container--narrow">
+            <h1 class="page-banner__title"><?php echo $args['title'] ?></h1>
+            <div class="page-banner__intro">
+                <p><?php echo $args['subtitle']; ?></p>
+            </div>
+        </div>
+    </div>
+<?php
+
+}
+
+
+// A function to get all of the different style tools, CSS, and index.js to use them throughout the site. 
 function university_files()
 {
     wp_enqueue_script('main-university-javascript', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
